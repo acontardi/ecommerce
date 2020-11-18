@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Acontardi \\": "vendor\\acontardi\\php-classes\\src"
+            "Acontardi\\": "vendor\\Acontardi\\php-classes\\src"
         }
     }
 }

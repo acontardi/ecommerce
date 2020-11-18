@@ -9,14 +9,14 @@ class ComposerStaticInit60d92485881b7a1c596ddcbc7048112f
     public static $prefixLengthsPsr4 = array (
         'A' => 
         array (
-            'Acontardi \\' => 11,
+            'Acontardi\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Acontardi \\' => 
+        'Acontardi\\' => 
         array (
-            0 => __DIR__ . '/..' . '/acontardi/php-classes/src',
+            0 => __DIR__ . '/..' . '/Acontardi/php-classes/src',
         ),
     );
 
