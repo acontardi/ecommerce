@@ -2,17 +2,25 @@
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+use \Slim\Slim;
+use \Acontardi\Page;
+use \Acontardi\PageAdmin;
+
+$app = new Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
     
-    $sql = new Acontardi\DB\Sql();
-    $results = $sql->select("SELECT * FROM tb_users");
+    $page = new Page();
+    $page->setTpl("index");
 
+});
 
-    echo json_encode($results);
+$app->get('/admin', function() {
+    
+    $page = new PageAdmin();
+    $page->setTpl("index");
 
 });
 
